@@ -152,10 +152,13 @@ body {
   color: var(--accent-color);
 }
 
-.contact-link:hover,
-.contact-link:focus,
-.contact-link-tel:hover,
-.contact-link-tel:focus  {
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.link-tel:hover,
+.link-tel:focus  {
   color: var(--accent-color);
 }
 
@@ -164,6 +167,10 @@ body {
 }
 
 .con-icon {
+  display: flex;
+  align-items: center;
+  
+
  fill:#757575;
  fill: currentColor;
 }
@@ -173,6 +180,10 @@ body {
   fill: var(--icon-hover);
 }
 
+.contact-item {
+  background-image: url('../images/icons.svg#icon-mail');
+}
+
 .contact-item::before,
 .contact-item-tel::before,
 .contact-item::after,
@@ -180,19 +191,17 @@ body {
   content: '';
 }
 
-.contact-header {
-  margin-left: auto;
-}
+
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link,
-.contact-link-tel {
+.link,
+.link-tel {
   padding-top: 32px;
   padding-bottom: 32px;
-  column-gap: 10px;
+  
 
   display: inline-block;
   display: flex;
@@ -363,14 +372,27 @@ body {
 
 .team-lst {
   display: flex;
-  column-gap: 30px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  
 }
+
+.team-name {
+ column-gap: 30px;
+}
+
+.team-lsts {
+  display: flex;
+  column-gap: 10px;
+}
+
 
  .team-wrap {
   padding: 30px 0 30px 0;
   min-width: 270px;
   height: auto;
-
+  
   border: 1px solid #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px; 
@@ -400,6 +422,7 @@ body {
 }
 
 .team-text {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
@@ -412,20 +435,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 10px;
-  color: #FFFFFF;
-  fill: currentColor;
+  column-gap: 30px;
+  
 }
+
+
 
 
 .social-icon {
-  fill: currentColor;
-}
+  width: 100%;
+  height: 100%;
+  }
 
 .social-icon:hover,
 .social-icon:focus {
- color: #2196F3; 
+
+  fill: #ffffff;
+  border-color: #18a0fb;
+  background-color: #18a0fb;
+  fill: currentColor;
 }
+
 
 
 /*-----------------------------------------CLIENTS--------------------------------------------*/
@@ -455,13 +485,12 @@ body {
 
   display: flex;
   justify-content: center;
-  align-items: center;
-  outline: transparent;
-  color: #AFB1B8;  
+  align-items: center; 
+ 
 }
 
 .icons {
-  fill: currentColor; 
+
 }
 
 .icons:hover,
@@ -469,7 +498,6 @@ body {
 .thumb-clients:hover,
 .thumb-clients:focus
 {
-  border-color: #2196F3;
   color: #2196F3;
 }
  
@@ -665,7 +693,3 @@ color: var(--accent-second-color);
 
   flex-basis: calc(100% / 3 - 30px);
 }
-
-
-
-    
