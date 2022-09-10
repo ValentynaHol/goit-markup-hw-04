@@ -29,16 +29,19 @@
         </ul>
       </nav>
 
-
+      <div class="contact-header">
       <ul class="contact list">
         <li class="contact-item"><a class="link link" href="mailto:info@devstudio.com"><svg class="con-icon"
-              width="16px" height="12px"></svg>info@devstudio.com</a></li>
+              width="16px" height="12px">
+              <use href="./images/icons.svg#icon-mail">
+              </use></svg>info@devstudio.com</a></li>
 
         <li class="contact-item-tel"><a class="link-tel link" href="tel:+380961111111"><svg class="con-icon"
-              width="10px" height="12px">
+              width="16px" height="12px">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>+38 096 111 11 11</a></li>
       </ul>
+      </div>
 
     </div>
 
@@ -64,7 +67,7 @@
 
           <li class="advant-descr">
             <div class="thumb"><svg class="icon" width="70px" height="70px">
-                <use href="./images/icons.svg#icon-antena"></use>
+                <use href="./images/icons.svg#icon-antenaone"></use>
               </svg></div>
             <h3 class="advant-title">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="describes">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -117,10 +120,14 @@
       </div>
     </section>
     <!--секція команда-->
+
+
     <section class="team section">
       <div class="container">
         <h2 class="team-title">Наша команда</h2>
 
+        
+<div class="card-team">
         <ul class="team-lst list">
 
           <li class="team-name">
@@ -131,9 +138,9 @@
 
 
               <ul class="team-lsts list">
-                <li class="thumb-networks"><button class="button"><svg class="social-icon" width="44px" height="44px">
+                <li class="thumb-networks"><svg class="social-icon" width="44px" height="44px">
                       <use href="./images/icons.svg#icon-insta"></use>
-                    </svg></button></li>
+                    </svg></li>
 
                 <li class="thumb-networks"><svg class="social-icon" width="44px" height="44px">
                     <use href="./images/icons.svg#icon-twit"></use>
@@ -150,7 +157,11 @@
             </div>
           </li>
         </ul>
+      
 
+        
+
+      
         <ul class="team-lst list">
           <li class="team-name">
             <img src="./images/img04.jpg" alt="фронтенд розробник" width="270" height="260" />
@@ -177,8 +188,10 @@
               </ul>
             </div>
           </li>
-        </ul>
+        </ul> 
+        
 
+      
         <ul class="team-lst list">
           <li class="team-name">
             <img src="./images/img05.jpg" alt="маркетолог" width="270" height="260" />
@@ -206,7 +219,8 @@
 
             </div>
           </li>
-        </ul>
+        </ul> 
+        
 
 
         <ul class="team-lst list">
@@ -236,9 +250,12 @@
             </div>
           </li>
         </ul>
+        
 
       </div>
     </section>
+
+
     <!--секція -->
     <section class="clients-section">
       <div class="container">
@@ -276,6 +293,7 @@
               </svg></div>
 
         </ul>
+        </div>
 
     </section>
   </main>
